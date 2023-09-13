@@ -1,11 +1,11 @@
 :root{
     --nav-color:#212121;
-    --nav-font-family: 'Roboto', 'Courier New', Courier, monospace, sans-serif; 
+    --nav-font-family: 'Roboto', 'Courier New', Courier, monospace; 
     --diff-color: #2196F3;
     --cut-color: #FFFFFF;
 }
-.body{
-    font-family: var(--nav-font-family);
+.global-body body{
+    font-family: 'Roboto', 'Courier New', Courier, monospace, sans-serif;
     background-color: var(--cut-color);
     text-decoration: none;
 }
@@ -15,11 +15,12 @@
     text-decoration: none;
 }
 
-.navigation{
+.navigation nav{
     font-family: var(--nav-font-family);
     color: var(--nav-color);
     font-size: 14px;
     font-weight: 500;
+    list-style-type: none;
 }
 
 .different:hover{
@@ -33,20 +34,23 @@
     font-weight: 500;
     cursor: pointer;
 }
-.email-contact:hover{
-    color: var(--diff-color);
-}
-
+.email-contact:hover
 .email-contact:focus{
     color: var(--diff-color);
 }
 
-.nav-link-current:hover{
+.nav-link-current:hover
+.nav-link-current:active{
     color: var(--diff-color);
 }
 
 .nav-link-current:visited{
     color: #3f093a; 
+}
+
+.nav-link:active
+.nav-link:hover{
+    color: var(--diff-color);
 }
 
 .buttons{
@@ -61,12 +65,17 @@
     letter-spacing: 0.48px;
     border: none;
     cursor: pointer;
+    list-style-type: none;
 }
 
 .buttons:focus{
     background-color:var(--diff-color);
     cursor: pointer;
     color: var(--cut-color);
+}
+
+.buttons:active{
+    color: var(--diff-color);
 }
 
 .portofoliu-section ul{
@@ -144,7 +153,6 @@
     line-height: 60px;
     letter-spacing: 2.64px;
     text-align: center;
-
 }
 
 .request-button{
@@ -171,6 +179,9 @@
 .request-button:focus{
     background-color: var(--diff-color);
     color: var(--cut-color);
+}
+.request-button:active{
+    color: var(--diff-color);
 }
 
 .descriptions h3{
@@ -202,10 +213,12 @@
     color: var(--nav-color);
     text-align: center;
     letter-spacing: 1.08px;
+    list-style-type: none;
 }
 
 .our-team section{
     background-color: #F5F4FA;
+    list-style-type: none;
 }
 
 .our-team h2{
