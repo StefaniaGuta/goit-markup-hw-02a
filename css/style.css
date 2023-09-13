@@ -23,11 +23,6 @@
     list-style-type: none;
 }
 
-.different:hover{
-    color: var(--diff-color);
-    cursor: pointer;
-}
-
 .email-contact{
     color: #757575;
     font-family: var(--nav-font-family);
