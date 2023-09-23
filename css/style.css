@@ -3,12 +3,15 @@
     --nav-font-family: 'Roboto', 'Courier New', Courier, monospace; 
     --diff-color: #2196F3;
     --cut-color: #FFFFFF;
+    --header-color: #757575;
+    --button-color:#F5F4FA;
+    --adress-color:#FFF;
 }
 .global-body body{
     width: 1600px;
     height: 2348px;
     font-family: 'Roboto', 'Courier New', Courier, monospace, sans-serif;
-    background-color: var(--cut-color);
+    background-color: var(--adress-color);
     text-decoration: none;
 }
 
@@ -19,10 +22,9 @@
 }
 
 .header a{
-    color: #757575;
-    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    color: var(--header-color);
+    font-family: var(--nav-font-family);
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
@@ -30,7 +32,7 @@
 }
 
 .navigation a{
-    color: #212121;
+    color: var(--nav-color);
 }
 
 .nav-link:active,
@@ -50,7 +52,7 @@ color: var(--diff-color);
 
 .buttons{
     border-radius: 4px;
-    background: #F5F4FA;
+    background: var(--button-color);
     color: var(--nav-color);
     text-align: center;
     font-family: var(--nav-font-family);
@@ -64,14 +66,13 @@ color: var(--diff-color);
 
 .button-navigation li{
     list-style-type: none;
-    
 }
 
 .buttons:active,
 .buttons:hover,
 .buttons:focus{
     background-color: var(--diff-color);
-    color: #FFFFFF;
+    color: var(--cut-color);
 }
 
 .portofoliu li{
@@ -98,7 +99,7 @@ color: var(--diff-color);
     font-size: 16px;
     line-height: 30px;
     font-family: var(--nav-font-family);
-    color: #757575;
+    color: var(--header-color);
     letter-spacing: 0.48px;
 }
 
@@ -107,26 +108,24 @@ color: var(--diff-color);
 }
 
 .adress-section h3{
-    color: #FFF;
-    font-family: Roboto;
+    color: var(--adress-color);
+    font-family: var(--nav-font-family);
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
     line-height: normal;
     letter-spacing: 0.42px;
+   font-style: normal;
 }
 
 .email-contact{
     width: 231px;
     height: 16px;
     color: #FFFFFF99;
-    font-family: Roboto;
+    font-family: var(--nav-font-family);
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.42px;
     cursor: pointer;
+    font-style: normal;
 }
 
 .email-contact:hover,
@@ -135,10 +134,9 @@ color: var(--diff-color);
 }
 
 .logo{
-    color: #2196F3;
+    color: var(--diff-color);
     font-family: 'Raleway', 'Courier New', Courier, monospace;
     font-size: 26px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.78px;
@@ -162,11 +160,10 @@ color: var(--diff-color);
     height: 120px;
     top: 280px;
     left: 452px;
-    color: #FFF;
+    color: var(--adress-color);
     text-align: center;
     font-family: var(--nav-font-family);
     font-size: 44px;
-    font-style: normal;
     font-weight: 900;
     line-height: 60px;
     letter-spacing: 2.64px;
@@ -179,13 +176,12 @@ color: var(--diff-color);
     height: 50px;
     flex-shrink: 0px;
     border-radius: 4px;
-    background: #2196F3;
+    background: var(--diff-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #FFF;
+    color: var(--adress-color);
     text-align: center;
     font-family: var(--nav-font-family);
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.96px;
@@ -202,10 +198,9 @@ color: var(--diff-color);
 }
 
 .descriptions h3{
-    color: #212121;
+    color: var(--nav-color);
     font-family: var(--nav-font-family);
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.42px;
@@ -213,21 +208,18 @@ color: var(--diff-color);
 }
 
 .descriptions p{
-    color: #757575;
+    color: var(--header-color);
     font-family: var(--nav-font-family);
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 171%; 
     letter-spacing: 0.42px;
 }
 
 .ocupation h2{
-    color: #212121;
+    color: var(--nav-color);
     text-align: center;
     font-family: var(--nav-font-family);
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
@@ -238,16 +230,18 @@ color: var(--diff-color);
 }
 
 .our-team section{
-    background-color: #F5F4FA;
+    background-color: var(--button-color);
     list-style-type: none;
+    width: 1600px;
+    height: 648px;
+    flex-shrink: 0px;
 }
 
 .our-team h2{
-    color: #212121;
+    color: var(--nav-color);
     text-align: center;
     font-family: var(--nav-font-family);
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
@@ -273,7 +267,7 @@ color: var(--diff-color);
 .our-team p{
     font-size: 16px;
     font-family: var(--nav-font-family);
-    color: #757575;
+    color: var(--header-color);
     text-align: center;
     letter-spacing: 0.48px;
 }
